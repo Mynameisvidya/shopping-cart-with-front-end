@@ -1,4 +1,3 @@
-/* Reset styles for a clean slate */
 body,
 html{
     margin: 0;
@@ -13,20 +12,17 @@ body{
     /* background-position: center center; */
     /* background-color: white; */
 }
-/* Container for the entire page */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header section */
+
 header {
     display: flex;
-    /* Align image and title horizontally */
     align-items: center;
     justify-content: space-between;
-    /* Distribute evenly */
     margin-bottom: 20px;
 }
 
@@ -35,7 +31,6 @@ header img {
     height: 80px;
     border-radius: 15px;
     object-fit: cover;
-    /* Resize image to fit container */
 
 }
 
@@ -46,18 +41,15 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Form for adding items */
+
 form {
     display: flex;
     flex-wrap: wrap;
-    /* Allow form elements to wrap if needed */
 }
 
 .form-control {
     flex: 1 1 auto;
-    /* Make form controls flexible */
     margin-right: 10px;
-    /* Spacing between controls */
     margin-bottom: 10px;
    
 }
@@ -86,12 +78,9 @@ form {
     cursor: pointer;
 }
 
-
-
 .btn {
     padding: 10px 10px;
     background-color: rgba(255, 255, 255, 0.075);
-    /* Darker green on hover */
     border: 3px solid black;
     color: rgb(212, 7, 161);
     cursor: pointer;
@@ -105,20 +94,18 @@ form {
     background-color: rgb(245, 60, 60);
     color: white;
     margin-top: 10px;
-   border:3px solid black;
-   border-radius: 4px;
-   padding:5px;
-   width:100px;
-   font-size: 18px;
+    border:3px solid black;
+    border-radius: 4px;
+    padding:5px;
+    width:100px;
+    font-size: 18px;
 }
 
-/* Filter for items */
 .filter {
     margin-bottom: 10px;
     margin-top: 16px;
 }
 
-/* Item list */
 .items {
     list-style: none;
     padding: 0;
@@ -129,7 +116,6 @@ form {
 .items li {
     display: flex;
     justify-content: space-between;
-    /* Align items and buttons */
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #bebdbd;
@@ -140,7 +126,6 @@ form {
 
 .remove-item {
     background: none;
-    /* Remove default button styling */
     border: none;
     cursor: pointer;
     color: #f00;
@@ -150,11 +135,8 @@ form {
 
 .remove-item:hover {
     color: #c00;
-    /* Darker red on hover */
 }
 
-/* Extra touches for aesthetics */
 .text-red {
     color: #f00;
-    /* Red for text elements */
 }
