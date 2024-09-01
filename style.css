@@ -1,0 +1,160 @@
+/* Reset styles for a clean slate */
+body,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/image01.jpeg");
+    /* background-attachment: fixed; */
+    background-repeat:no-repeat;
+    background-size: cover; 
+    /* background-position: center center; */
+    /* background-color: white; */
+}
+/* Container for the entire page */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header section */
+header {
+    display: flex;
+    /* Align image and title horizontally */
+    align-items: center;
+    justify-content: space-between;
+    /* Distribute evenly */
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+    /* Resize image to fit container */
+
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(219, 23, 72);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Form for adding items */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow form elements to wrap if needed */
+}
+
+.form-control {
+    flex: 1 1 auto;
+    /* Make form controls flexible */
+    margin-right: 10px;
+    /* Spacing between controls */
+    margin-bottom: 10px;
+   
+}
+
+
+.form-input-filter {
+    width: 400px;
+    padding: 10px;
+    border: 3px solid #0f0000;
+    border-radius: 5px;
+    font-size: 26px;
+    color: rgb(175, 171, 171);
+    cursor: pointer;
+    background-color: rgba(127, 231, 231, 0);
+}
+
+.form-input {
+    background-color: rgba(127, 231, 231, 0);
+    width: 100%;
+    padding: 10px;
+    color: rgb(141, 137, 137);
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 7px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+.btn {
+    padding: 10px 10px;
+    background-color: rgba(255, 255, 255, 0.075);
+    /* Darker green on hover */
+    border: 3px solid black;
+    color: rgb(212, 7, 161);
+    cursor: pointer;
+    width:150px;
+    border-radius: 5px;
+    font-size: 19px;
+   
+}
+
+.btn-clear {
+    background-color: rgb(245, 60, 60);
+    color: white;
+    margin-top: 10px;
+   border:3px solid black;
+   border-radius: 4px;
+   padding:5px;
+   width:100px;
+   font-size: 18px;
+}
+
+/* Filter for items */
+.filter {
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
+
+/* Item list */
+.items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width:500px;
+}
+
+.items li {
+    display: flex;
+    justify-content: space-between;
+    /* Align items and buttons */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #bebdbd;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.remove-item {
+    background: none;
+    /* Remove default button styling */
+    border: none;
+    cursor: pointer;
+    color: #f00;
+    font-size: 15px;
+    
+}
+
+.remove-item:hover {
+    color: #c00;
+    /* Darker red on hover */
+}
+
+/* Extra touches for aesthetics */
+.text-red {
+    color: #f00;
+    /* Red for text elements */
+}
